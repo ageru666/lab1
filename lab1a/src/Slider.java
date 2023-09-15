@@ -31,7 +31,6 @@ class SliderControlThread extends Thread {
         int count = 0;
         int maxIterations = 1000000;
         while (!isInterrupted()) {
-            int value = customSlider.getValue();
             count++;
             if (count > maxIterations) {
                 customSlider.increaseValue(incrementValue);
